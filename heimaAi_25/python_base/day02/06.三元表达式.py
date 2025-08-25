@@ -1,0 +1,1 @@
+print(10 if 11>10 else 0)

@@ -49,6 +49,7 @@
 # fun2(name="男")
 
 def get_sum(*args):
+    print(*args)
     sum1 = 0
     for item in args:
         sum1+=item

@@ -1,0 +1,1 @@
+import{$ as e}from"./index-iZTeaJac.js";const t="/",o=async a=>await e(`${t}/api/pathology/telemedicine`,a),n=async()=>await e(`${t}/api/pathology/telemedicine/list`),l=async a=>await e(`${t}/api/pathology/telemedicine/detail`,{...a}),s=async a=>await e(`${t}/api/pathology/train`,a);export{o as a,l as b,s as c,n as p};

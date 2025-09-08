@@ -9,7 +9,7 @@
         文件对象名.close()
 """
 
-f = open("./files/a.txt","r")
+f = open("./files/b.txt","r",encoding="utf-8")
 print(f'文件对象{f}')
-print(f.readlines())
+print(f.read())
 f.close()

@@ -26,7 +26,6 @@ class Child(Parent):
     def getMoney(self):
         print(super().getMoney())
 
-
 if __name__ == '__main__':
     c = Child()
     c.getSkill()

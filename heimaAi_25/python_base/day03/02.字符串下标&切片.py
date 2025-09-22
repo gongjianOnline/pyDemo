@@ -24,10 +24,10 @@ len(str) 返回字符串长度
 
 """
 
-print(str.find("i",3,6))
-
-print(str.replace("i","xxx",1))
-
-print(str.split(" "))
-
-print(",".join(str))
+# print(str.find("i",3,6))
+#
+# print(str.replace("i","xxx",1))
+#
+# print(str.split(" "))
+#
+# print(",".join(str))

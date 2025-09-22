@@ -14,5 +14,5 @@
 obj = {"name":"张三","age":"10"}
 print(obj.items())
 
-for item in obj:
-    print(item,obj[item])
+# for item in obj:
+#     print(item,obj[item])

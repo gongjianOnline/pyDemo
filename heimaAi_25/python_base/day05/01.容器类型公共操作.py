@@ -22,5 +22,8 @@ list1 = [1,2,3]
 # print((1,2,3)+(4,))
 
 print(enumerate(list1))
+for index,item in enumerate(list1):
+    print(index,item)
+
 # print(list(range(1,5,1)))
 #

@@ -1,0 +1,24 @@
+import socket
+
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# 绑定 IP 和 端口号
+server_socket.bind(("10.1.68.179",12306))
+# 设置最大监听数(允许挂载,挂起的数量)
+server_socket.listen(5)
+
+while True:
+    # 具体的监听动作,接受客户端信息,并获取 1 个socket对象,负责和客户端交互
+    # accept_socket 负责和客户端交互的对象
+    # client_info 客户端的IP信息
+    accept_socket,client_info = server_socket.accept()
+    # 给客户端法一句话,二进制形式
+    accept_socket.send("干啥呢".encode('utf-8'))
+    # 接受客户端信息
+    # 一次性接受客户端数据的1024字节,超出则无法接受
+    recv_data_bytes = accept_socket.recv(1024)
+    recv_data = recv_data_bytes.decode('utf-8')
+    print("服务器端打印",recv_data)
+
+    # 和客户端交互的 scoket 关闭
+    accept_socket.close()
+

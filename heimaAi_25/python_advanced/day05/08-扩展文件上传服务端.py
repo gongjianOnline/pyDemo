@@ -19,5 +19,5 @@ with open(f"./file/serveFile{count}.txt", "wb") as f:
             break
         f.write(recv_data)
 
-# accept_socket.close()
+accept_socket.close()
 # server_socket.close()

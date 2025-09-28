@@ -7,6 +7,7 @@
             threading.Thread(target=函数名,daemon=True)
         方式二:(废弃)
             线程对象.setDaemon(True)
+
 """
 import threading,time
 

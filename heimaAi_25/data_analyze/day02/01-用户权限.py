@@ -6,6 +6,7 @@
     passwd itheima
 切换用户
     su itheima
+
 ---
 查看所有组
     getent group
@@ -34,5 +35,35 @@ chown 修改属主权限
     只能通过root账号修改
     chown [-R] 用户:用户组 文件或文件夹
 
+----
+yum [-y] [install | remove | search] 软件名
+    -y 自动确认,无需手动确认安装和卸载过程
 
+----
+systemctl 启动 \ 停止 \ 开机自启
+    语法: systemctl start | stop | status | enable | disable 服务名
+                    启动    关闭   查看状态  开机自启   关机开机自启
+
+----
+查看进程
+    语法 ps -ef
+        -e 显示全部信息
+        -f 格式化数据
+管理进程
+    ps -ef | grep 关键字
+    kill [-9] 进程号    关闭指定进程号的进程
+------
+环境变量
+    针对当前用户生效,配置 ~/.bashrc文件中
+    针对所用用户生效,配置 /etc/profile文件中
+    配置完成后 使用 'source 配置文件' , 进行立刻生效,或重新登录shell生效
+------
+上传下载命令 rz & sz
+    安装: yum -y install lrzsz
+------
+压缩&解压
+    压缩 (如果是 gz  -zcvf)
+        tar -cvf 压缩包名称.格式[zip | gz | tar]  文件1 文件2 ....
+    解压 (如果是 gz  -zxvf)
+        tar -xvf 压缩包.格式 -C 指定路径
 """

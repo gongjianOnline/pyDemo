@@ -2,7 +2,7 @@ from sklearn.linear_model import LinearRegression
 import joblib
 from sklearn.metrics._plot import regression
 
-
+# 回归问题： 目标值（标签值）是连续的
 def dem01_Regression_pred():
     # 准备数据 平时成绩 期末成绩 最终成绩
     x = [[80,86],[82,80],[85,78],[90,90],[86,82],[82,90],[78,80],[92,94]]

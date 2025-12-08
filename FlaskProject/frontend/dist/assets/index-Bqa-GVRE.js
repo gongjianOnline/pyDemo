@@ -1,0 +1,1 @@
+import{$ as a}from"./index-iZTeaJac.js";const e="/",s=async t=>await a(`${e}/api/treatment/task_create_from_excel`,t),n=async()=>await a(`${e}/api/treatment/task_list`),c=async t=>await a(`${e}/api/treatment/task_detail`,{...t}),i=async t=>await a(`${e}/api/treatment/model_create`,t);export{c as a,s as b,i as c,n as t};

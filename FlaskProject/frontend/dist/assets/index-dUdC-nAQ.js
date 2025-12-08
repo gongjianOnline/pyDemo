@@ -1,0 +1,1 @@
+import{$ as t}from"./index-iZTeaJac.js";const s="/",n=async a=>await t(`${s}/api/inference/task_create`,{...a}),r=async a=>await t(`${s}/api/inference/task_detail`,{...a}),i=async a=>await t(`${s}/api/inference/task_list`,{...a});export{r as a,n as b,i as t};
